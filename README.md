@@ -60,11 +60,12 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="2c99", ATTRS{idProduct}=="0002", SYMLINK+="p
 - Save file (CTRL+O ENTER)
 - Disconnect first printer
 - Repeat for each printer and make sure each SYMLINK is unique (printer_prusa_1, printer_prusa_2)
+- Connect all the printers to USB ports
 - Reboot UDEV
 ```bash
 sudo udevadm trigger
 ```
-- Verify connected aliases
+- Verify connection aliases for printers
 ```bash
 ls /dev/printer_
 ```
@@ -84,5 +85,7 @@ sudo docker compose up -d
 ```
 
 ## Verify
+For each printer:
 - Open `http://<raspberry_ip>:8001` or 8002, 8003, 8004
 - Configure Octoprint for MK3S https://help.prusa3d.com/article/octoprint-configuration-and-install_2182
+- On the main screen, choose Serial port as `/dev/ttyAMA0`, Baudrate `115200`, tick "Save connection settings" and press "Connect"
