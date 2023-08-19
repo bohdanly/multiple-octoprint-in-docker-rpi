@@ -75,6 +75,7 @@ cd octoprint
 nano docker-compose.yml
 ```
 1. Paste [`docker-compose.yml`](docker-compose.yml) content
+1. Uncomment services for other printers (if needed)
 1. Save file (CTRL+O ENTER)
 ```bash
 sudo docker compose up -d
