@@ -74,12 +74,12 @@ mkdir octoprint
 cd octoprint
 nano docker-compose.yml
 ```
-1. Paste `docker-compose.yml` content
+1. Paste [`docker-compose.yml`](docker-compose.yml) content
 1. Save file (CTRL+O ENTER)
 ```bash
 sudo docker compose up -d
 ```
 
 ## Verify
-11. Open http://<raspberry_ip>:8001, 8002, 8003, 8004
+11. Open `http://<raspberry_ip>:8001` or 8002, 8003, 8004
 12. Configure Octoprint for MK3S https://help.prusa3d.com/article/octoprint-configuration-and-install_2182
