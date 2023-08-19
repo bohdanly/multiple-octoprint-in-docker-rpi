@@ -10,7 +10,7 @@ services:
     devices:
      - /dev/printer_prusa_1:/dev/ttyACM0
     volumes:
-     - octoprint_prusa_1:/octoprint
+     - ./octoprint_1:/octoprint
 
   # octoprint_2:
   #   container_name: octoprint_2
@@ -21,7 +21,7 @@ services:
   #   devices:
   #    - /dev/printer_prusa_2:/dev/ttyACM0
   #   volumes:
-  #    - octoprint_prusa_2:/octoprint
+  #    - ./octoprint_2:/octoprint
 
   # octoprint_3:
   #   container_name: octoprint_3
@@ -32,7 +32,7 @@ services:
   #   devices:
   #    - /dev/printer_prusa_3:/dev/ttyACM0
   #   volumes:
-  #    - octoprint_prusa_3:/octoprint
+  #    - ./octoprint_3:/octoprint
 
   # octoprint_4:
   #   container_name: octoprint_4
@@ -43,10 +43,5 @@ services:
   #   devices:
   #    - /dev/printer_prusa_4:/dev/ttyACM0
   #   volumes:
-  #    - octoprint_prusa_4:/octoprint
+  #    - ./octoprint_4:/octoprint
 
-volumes:
-  octoprint_prusa_1:
-  # octoprint_prusa_2:
-  # octoprint_prusa_3:
-  # octoprint_prusa_4:
